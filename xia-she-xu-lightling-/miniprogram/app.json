@@ -1,0 +1,67 @@
+{
+  "pages": [
+    
+    "pages/tianqi/tianqi",
+    "pages/map/map",
+    "pages/home/home",
+    "pages/publish/publish",
+    "pages/replay/replay",
+    "pages/SOS/SOS",
+    "pages/detail/detail"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "暖阳",
+    "navigationBarTextStyle": "black"
+  },
+  "plugins": {
+    "QCloudAIVoice": {
+      "version": "1.0.6",
+      "provider": "wx3e17776051baf153"
+    },
+      "routePlan": {
+        "version": "1.0.5",
+        "provider": "wx50b5593e81dd937a"
+      }
+  },
+  "tabBar": {
+    "backgroundColor": "#F5F5F5",
+    "color": "#ccc",
+    "selectedColor": "#0f0",
+    "list": [
+      {
+        "pagePath": "pages/tianqi/tianqi",
+        "iconPath": "pages/image/shouye.png",
+        "selectedIconPath": "pages/image/shouye.png",
+        "text": "天气"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "iconPath": "pages/image/ditu.png",
+        "selectedIconPath": "pages/image/ditu.png",
+        "text": "地图"
+      },
+      {
+        "pagePath": "pages/SOS/SOS",
+        "iconPath": "pages/image/sos.png",
+        "selectedIconPath": "pages/image/sos.png",
+        "text": "sos紧急"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "pages/image/huodong.png",
+        "selectedIconPath": "pages/image/huodong.png",
+        "text": "活动"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

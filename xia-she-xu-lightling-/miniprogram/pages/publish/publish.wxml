@@ -1,0 +1,24 @@
+<form bindsubmit="formSubmit">
+  <view class="active">
+    <textarea placeholder="说点什么吧~" placeholder-class="holder" value=               "{{input}}" bindblur='getTextAreaContent' name="input-content"
+    type="text"></textarea>
+  </view>
+  <view class="audio">
+    <button class="video" bindtouchstart="touchdown" bindtouchend="touchup">语音</button>
+    <button class="voice" bindtap="video">播放语音</button>
+    <button class="analyse" bindtap="analyse">语音识别</button>
+  </view>
+  <view>{{motto}}</view>
+  <button bindtap="chooseImage" class="image">上传图片</button>
+  <view>下面将显示待上传的图片</view>
+  <scroll-view class="image-group" scroll-x="true">
+      <block wx:for='{{images}}' wx:for-index='idx'>
+        <view>
+          <image src='{{images[idx]}}' mode='aspectFill' bindtap="previewImg"></image>
+          <icon type='clear' bindtap='removeImg'  data-index="{{idx}}" ></icon>
+        </view>
+      </block>
+  </scroll-view>
+  <button formType='submit'  open-type="getUserInfo" class="upload">提交</button>
+</form>
+  

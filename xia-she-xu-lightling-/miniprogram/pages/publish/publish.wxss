@@ -1,0 +1,61 @@
+page
+{
+  background-color:white
+}
+.active
+{
+  width:720rpx;
+  height:450rpx;
+  border:1px  black;
+  background-color:white;
+  text-align:left;
+  margin-top: 15px;
+  padding: 25rpx 0;
+  background-image:linear-gradient(190deg, #1373f3, #ec4c3a);
+  opacity: 0.75
+}
+.holder{
+  opacity: 0.1;
+  color:black;
+}
+.audio
+{
+  display:flex;
+
+  margin-top:15px;
+  column-gap: 40px;
+}
+.video
+{
+  background-color:#1173f3;
+  border-radius: 50px;
+ 
+}
+.voice
+{
+  background-color:greenyellow; 
+  border-radius: 50px;
+}
+/*.analyse
+{
+  background-color:red;
+  border-radius: 50px;
+}*/
+.image {
+  width: 750rpx;
+  height: 40rpx;
+  line-height: 30px;
+  margin-top: 10px;
+  font-weight:20px;
+  background-color: rgb(216, 8, 23);
+  color: black;
+   border-radius: 50px;
+}
+.upload
+{
+  background-color:gold; 
+  border-radius: 50px;
+  width: 600rpx;
+  line-height: 20px;
+  margin-top: 20px;
+}

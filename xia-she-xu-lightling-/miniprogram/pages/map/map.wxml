@@ -1,0 +1,15 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class="page-body">
+  <view class="page-section page-section-gap">
+    <map
+      id="myMap"
+      style="width: 100%; height: 300px;"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      markers="{{markers}}"
+      covers="{{covers}}"
+      show-location
+    ></map>
+  </view>
+</view>
+<button class="daohang" bindtap="daohang">导航</button>

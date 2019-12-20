@@ -1,0 +1,98 @@
+
+<view class="container">  
+  <view class="guide" wx:if="{{step === 1}}">
+    <text class="headline">欢迎你使用这个小程序，下面是一些你在使用这个小程序前需要了解的</text>
+    <text class="p">1. 首先，这个小程序主要用于提高你的生活品质，并在你需求帮助时提供一个便捷的通道</text>
+    <text class="p">2. 我们可能需要获取一些你的个人信息，这是为了给你提供更好的帮助，如果你准备好了的话，就点击下一步，开始我们的教程吧</text>
+    <div class="nav">
+      <button class="next" size="mini" type="default" bindtap="nextStep">下一步</button>
+    </div>
+  </view>
+
+  <form bindsubmit="formSubmit">
+    <view class="guide" wx:if="{{step === 2}}">
+      <text class="headline">基础信息（请填写真实信息，这可以为你带来更优质的体验）</text>
+      <text class="p">紧急联系人信息</text>
+      <text class="p">紧急联系人1</text>
+   
+      <text class="p">1.联系人姓名</text>
+     <input bindinput="input1"></input>
+      <text class="p">2.联系人电话号码</text>
+     <input bindinput="input2"></input>
+    
+    <text class="p">紧急联系人2</text>
+   
+    <text class="p">1.联系人姓名</text>
+    <input bindinput="input3"></input>
+    <text class="p">2.联系人电话号码</text>
+    <input bindinput="input4"></input>
+    
+    <text class="p">在你填写完这些信息后，请点击上传按钮，便于我们获取信息</text>
+    <button bindtap="upload">上传</button>
+    <div class="nav">
+      <button class="prev" size="mini" type="default" bindtap="prevStep">上一步</button>
+      <button class="next" size="mini" type="default" bindtap="nextStep">下一步</button>
+      </div>
+    </view>
+</form>
+ 
+  <view class="guide" wx:if="{{step === 3}}">
+    <text class="headline">功能介绍：主界面（天气预报）</text>
+    <text class="p">现在你看到的是主界面，会显示近几天的天气预报，和实时天气信息</text>
+    <image style="width: 500px; height: 500px" class="code-image" src="../../images/4.jpg" mode="aspectFit"></image>
+    <div class="nav">
+      <button class="prev" size="mini" type="default" bindtap="prevStep">上一步</button>
+      <button class="next" size="mini" type="default" bindtap="nextStep" >下一步</button>
+    </div>
+  </view>
+
+ 
+  <view class="guide" wx:if="{{step === 4}}">
+    <text class="headline">功能介绍：导航</text>
+    <text class="p">这是导航界面，你可以点击导航，输入自己要去的地点，我们会为你提供便捷的去往地点的方法</text>
+    <image style="width: 500px; height: 500px" class="code-image" src="../../images/5.jpg" mode="aspectFit"></image>
+
+    <div class="nav">
+      <button class="prev" size="mini" type="default" bindtap="prevStep">上一步</button>
+      <button class="next" size="mini" type="default" bindtap="nextStep">下一步</button>
+    </div>
+  </view>
+
+
+  <view class="guide" wx:if="{{step === 5}}">
+    <text class="headline">功能介绍：SOS</text>
+    <text class="p">这里是SOS界面，点到这个界面时，你可以点击紧急联系人的姓名或者我们预设的紧急电话，可以快速拨打对应得电话号码，以便于求助</text>
+   <image style="width: 500px; height: 500px" class="code-image" src="../../images/3.jpg" mode="aspectFit"></image>
+
+    <div class="nav">
+      <button class="prev" size="mini" type="default" bindtap="prevStep">上一步</button>
+      <button class="next" size="mini" type="default" bindtap="nextStep">下一步</button>
+    </div>
+  </view>
+
+
+  <view class="guide" wx:if="{{step === 6}}">
+    <text class="headline">功能介绍：活动</text>
+    <text class="p">这张图是活动界面，在这里你可以进行发帖进行求助，或着相约一些好友进行活动</text>
+    <image style="width: 500px; height: 500px" class="code-image" src="../../images/2.jpg" mode="aspectFit"></image>
+   <text class="p"> 在发帖时，你可以上传图片，语音，文字，或者将语音转变成文字，来展现自己遇到的困境或者想要进行的活动</text>
+   <image style="width: 500px; height: 500px" class="code-image" src="../../images/1.jpg" mode="aspectFit"></image>
+   
+    <div class="nav">
+      <button class="prev" size="mini" type="default" bindtap="prevStep">上一步</button>
+      <button class="next" size="mini" type="default" bindtap="nextStep">下一步</button>
+    </div>
+  </view>
+
+
+  <view class="guide" wx:if="{{step === 7}}">
+    <text class="headline">完成指引 !</text>
+    <text class="p">恭喜你，至此已经完成了全部的新手指引，快来点击进入首页来体验我们的小程序吧！</text>
+
+    <div class="nav">
+      <button class="prev" size="mini" type="default" bindtap="prevStep">上一步</button>
+      <button class="next" size="mini" type="default" bindtap="goHome">进入首页</button>
+    </div>
+  </view>
+
+</view>

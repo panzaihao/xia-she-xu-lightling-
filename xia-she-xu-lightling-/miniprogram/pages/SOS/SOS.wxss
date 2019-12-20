@@ -1,0 +1,28 @@
+.first{
+font-size: 30px;
+font-weight: bold;
+text-align: center;
+}
+.second{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.one{
+  color:red
+}
+.two{
+  color:red
+}
+.three{
+  color:red
+}
+.baojing{
+  color:blue
+}
+.huojing{
+  color:red
+}
+.jiuhu{
+  color:blue
+}

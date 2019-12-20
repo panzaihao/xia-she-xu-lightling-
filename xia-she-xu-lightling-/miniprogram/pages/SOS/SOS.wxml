@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="first">
+紧急联系人：
+</view>
+<view bindtap="one">
+<button class="one">
+{{Nameone}}
+</button>
+</view>
+<view bindtap="two">
+<button class="two">
+{{Nametwo}}
+</button>
+</view>
+<view bindtap="three">
+<button class="three">
+{{Namethree}}
+</button>
+</view>
+<view bindtap="four">
+<button class="four">
+{{Namefour}}
+</button>
+</view>
+<view bindtap="five">
+<button class="five">
+{{Namefive}}
+</button>
+</view>
+<view class="second">
+紧急电话:
+</view>
+<view bindtap="110">
+<button class="baojing">
+110
+</button>
+</view>
+<view bindtap="119">
+<button class="huojing">
+119
+</button>
+</view>
+<view bindtap="120">
+<button class="jiuhu">
+120
+</button>
+</view>
